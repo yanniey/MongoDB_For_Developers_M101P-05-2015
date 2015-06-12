@@ -14,24 +14,26 @@ To build a blog with [MongoDB](https://www.mongodb.org/) and [Bottle](http://bot
 
 Import Json file into MongoDB
 
-```mongoimport -d school -c students < HW3.1students.json
-```
+```mongoimport -d school -c students < HW3.1students.json```
 
 
 HW 3.2 
 
 ```
 # XXX HW 3.2 Work Here to insert the post
+
 self.posts.insert(post, j=True)
 ```
 
 ```
 # XXX HW 3.2 Work here to get the posts
+
 cursor = self.posts.find().sort([('date',-1)]).limit(num_posts)
 ```
 
 ```
 # XXX Work here to retrieve the specified post
+
 post = self.posts.find_one({'permalink':permalink})
 ```
 
