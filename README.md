@@ -6,6 +6,42 @@
  
 To build a blog with [MongoDB](https://www.mongodb.org/) and [Bottle](http://bottlepy.org/docs/dev/index.html) framework in Python(PyMongo)
 
+---
++ Week 5
+	Aggregate
+
+Aggregation Pipeline:
+$project,$match,$group,$sort,$skip,$limit,$unwind,$out
+
+Aggregation Expressions:
+$sum,$avg,$min,$max,$push,$addtoset,$first,$last
+
+
+---
++ Week 4, finished 06/20/2015
+
+	All about indexing. Using indexes, monitoring and understanding performance. Performance in sharded environments.
+
+	Pluggable storage engines: **MMAP**(default) vs. **WiredTiger**
+
+	Storage engines talk to drivers and influence how data is indexed and formated on the hard drive
+
+	How to change default storage engine to Wired Tiger:
+
+	```
+	# kill current MongoDB session
+	killall mongod
+	# make a new directory
+	mkdir WT
+	# change the storage engine
+	mongod --storageEngine wiredTiger
+	```
+
+	```
+	db.foo.stats()
+	```
+
+
 
 ---
 + Week 3, completed 6/11/15
