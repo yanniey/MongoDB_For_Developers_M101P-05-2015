@@ -11,7 +11,7 @@ To build a blog with [MongoDB](https://www.mongodb.org/) and [Bottle](http://bot
 	Aggregate
 
 Aggregation Pipeline:
-$project,$match,$group,$sort,$skip,$limit,$unwind,$out
+$project,$match,$group,$sort,$skip,$limit,$unwind(the reverse is $push),$out
 
 Aggregation Expressions:
 $sum,$avg,$min,$max,$push,$addtoset,$first,$last
