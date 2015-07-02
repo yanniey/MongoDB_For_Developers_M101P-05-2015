@@ -7,6 +7,13 @@
 To build a blog with [MongoDB](https://www.mongodb.org/) and [Bottle](http://bottlepy.org/docs/dev/index.html) framework in Python(PyMongo)
 
 ---
++ Week 6 
+
+Drivers, impact of replication and Sharding on design and development.
+
+Replica set, Primary vs. secondary server, 
+
+---
 + Week 5
 	Aggregate
 
