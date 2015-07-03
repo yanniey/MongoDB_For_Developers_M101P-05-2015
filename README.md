@@ -7,11 +7,35 @@
 To build a blog with [MongoDB](https://www.mongodb.org/) and [Bottle](http://bottlepy.org/docs/dev/index.html) framework in Python(PyMongo)
 
 ---
-+ Week 6 
++ Week 6, completed 7/3/15.
 
 Drivers, impact of replication and Sharding on design and development.
 
-Replica set, Primary vs. secondary server, 
++ Replica set
++ Primary vs. secondary server
++ W & J parameter, Wtimeout
++ Read preference
++ Sharding, shard keys are immutable
++ Config servers
+
+
+```
+rs.slaveOk()
+sh.status()
+```
+
+ I had some problems with assignment 6.5 which required running a 3-node replica set on my local end. The `validate.py` file had an error message of:
+
+ ```
+ Traceback (most recent call last):
+  File "validate.py", line 3, in <module>
+    eval(compile(base64.b64decode(code), "<string>", 'exec'))
+  File "<string>", line 36
+    print "usage validate.py -m mongoConnectString"
+                                                  ^
+
+```
+  Eventually I figured out that it's because my default Python version was Python3,but this course required Python2, so I was able to solve my problem through an easy `python2 validate.py`.
 
 ---
 + Week 5

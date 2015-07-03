@@ -1,0 +1,136 @@
+2015-07-03T01:13:53.214-0500 I JOURNAL  [initandlisten] journal dir=/data/rs2/journal
+2015-07-03T01:13:53.214-0500 I JOURNAL  [initandlisten] recover : no journal files present, no recovery needed
+2015-07-03T01:13:53.235-0500 I JOURNAL  [durability] Durability thread started
+2015-07-03T01:13:53.235-0500 I CONTROL  [initandlisten] MongoDB starting : pid=21752 port=27018 dbpath=/data/rs2 64-bit host=Anyis-MacBook-Pro.local
+2015-07-03T01:13:53.235-0500 I JOURNAL  [journal writer] Journal writer thread started
+2015-07-03T01:13:53.235-0500 I CONTROL  [initandlisten] db version v3.0.3
+2015-07-03T01:13:53.236-0500 I CONTROL  [initandlisten] git version: b40106b36eecd1b4407eb1ad1af6bc60593c6105
+2015-07-03T01:13:53.236-0500 I CONTROL  [initandlisten] build info: Darwin bs-osx108-7 12.5.0 Darwin Kernel Version 12.5.0: Sun Sep 29 13:33:47 PDT 2013; root:xnu-2050.48.12~1/RELEASE_X86_64 x86_64 BOOST_LIB_VERSION=1_49
+2015-07-03T01:13:53.236-0500 I CONTROL  [initandlisten] allocator: system
+2015-07-03T01:13:53.236-0500 I CONTROL  [initandlisten] options: { net: { port: 27018 }, processManagement: { fork: true }, replication: { oplogSizeMB: 64, replSet: "m101" }, storage: { dbPath: "/data/rs2", mmapv1: { smallFiles: true } }, systemLog: { destination: "file", path: "2.log" } }
+2015-07-03T01:13:53.237-0500 I INDEX    [initandlisten] allocating new ns file /data/rs2/local.ns, filling with zeroes...
+2015-07-03T01:13:53.268-0500 I STORAGE  [FileAllocator] allocating new datafile /data/rs2/local.0, filling with zeroes...
+2015-07-03T01:13:53.269-0500 I STORAGE  [FileAllocator] creating directory /data/rs2/_tmp
+2015-07-03T01:13:53.292-0500 I STORAGE  [FileAllocator] done allocating datafile /data/rs2/local.0, size: 16MB,  took 0.023 secs
+2015-07-03T01:13:53.317-0500 I REPL     [initandlisten] Did not find local replica set configuration document at startup;  NoMatchingDocument Did not find replica set configuration document in local.system.replset
+2015-07-03T01:13:53.319-0500 I NETWORK  [initandlisten] waiting for connections on port 27018
+2015-07-03T01:15:03.596-0500 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:59112 #1 (1 connection now open)
+2015-07-03T01:15:03.597-0500 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:59114 #2 (2 connections now open)
+2015-07-03T01:15:03.598-0500 I NETWORK  [conn1] end connection 127.0.0.1:59112 (1 connection now open)
+2015-07-03T01:15:05.604-0500 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:59121 #3 (2 connections now open)
+2015-07-03T01:15:05.605-0500 I NETWORK  [conn3] end connection 127.0.0.1:59121 (1 connection now open)
+2015-07-03T01:15:05.606-0500 I REPL     [WriteReplSetConfig] Starting replication applier threads
+2015-07-03T01:15:05.606-0500 I REPL     [rsSync] replSet warning did not receive a valid config yet, sleeping 5 seconds 
+2015-07-03T01:15:05.607-0500 I REPL     [ReplicationExecutor] New replica set config in use: { _id: "m101", version: 1, members: [ { _id: 0, host: "localhost:27017", arbiterOnly: false, buildIndexes: true, hidden: false, priority: 1.0, tags: {}, slaveDelay: 0, votes: 1 }, { _id: 1, host: "localhost:27018", arbiterOnly: false, buildIndexes: true, hidden: false, priority: 1.0, tags: {}, slaveDelay: 0, votes: 1 }, { _id: 2, host: "localhost:27019", arbiterOnly: false, buildIndexes: true, hidden: false, priority: 1.0, tags: {}, slaveDelay: 0, votes: 1 } ], settings: { chainingAllowed: true, heartbeatTimeoutSecs: 10, getLastErrorModes: {}, getLastErrorDefaults: { w: 1, wtimeout: 0 } } }
+2015-07-03T01:15:05.607-0500 I REPL     [ReplicationExecutor] This node is localhost:27018 in the config
+2015-07-03T01:15:05.607-0500 I REPL     [ReplicationExecutor] transition to STARTUP2
+2015-07-03T01:15:05.608-0500 I REPL     [ReplicationExecutor] Member localhost:27017 is now in state SECONDARY
+2015-07-03T01:15:05.608-0500 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:59123 #4 (2 connections now open)
+2015-07-03T01:15:05.609-0500 I REPL     [ReplicationExecutor] Member localhost:27019 is now in state STARTUP2
+2015-07-03T01:15:07.607-0500 I REPL     [ReplicationExecutor] replSetElect voting yea for localhost:27017 (0)
+2015-07-03T01:15:07.609-0500 I REPL     [ReplicationExecutor] Member localhost:27017 is now in state PRIMARY
+2015-07-03T01:15:10.611-0500 I REPL     [rsSync] ******
+2015-07-03T01:15:10.612-0500 I REPL     [rsSync] creating replication oplog of size: 64MB...
+2015-07-03T01:15:10.612-0500 I STORAGE  [FileAllocator] allocating new datafile /data/rs2/local.1, filling with zeroes...
+2015-07-03T01:15:11.007-0500 I STORAGE  [FileAllocator] done allocating datafile /data/rs2/local.1, size: 128MB,  took 0.394 secs
+2015-07-03T01:15:11.067-0500 I REPL     [rsSync] ******
+2015-07-03T01:15:11.067-0500 I REPL     [rsSync] initial sync pending
+2015-07-03T01:15:11.067-0500 I REPL     [ReplicationExecutor] syncing from: localhost:27017
+2015-07-03T01:15:11.078-0500 I REPL     [rsSync] initial sync drop all databases
+2015-07-03T01:15:11.078-0500 I STORAGE  [rsSync] dropAllDatabasesExceptLocal 1
+2015-07-03T01:15:11.078-0500 I REPL     [rsSync] initial sync clone all databases
+2015-07-03T01:15:11.079-0500 I REPL     [rsSync] initial sync data copy, starting syncup
+2015-07-03T01:15:11.080-0500 I REPL     [rsSync] oplog sync 1 of 3
+2015-07-03T01:15:11.080-0500 I REPL     [rsSync] oplog sync 2 of 3
+2015-07-03T01:15:11.081-0500 I REPL     [rsSync] initial sync building indexes
+2015-07-03T01:15:11.081-0500 I REPL     [rsSync] oplog sync 3 of 3
+2015-07-03T01:15:11.082-0500 I REPL     [rsSync] initial sync finishing up
+2015-07-03T01:15:11.082-0500 I REPL     [rsSync] replSet set minValid=55962867:1
+2015-07-03T01:15:11.083-0500 I REPL     [rsSync] initial sync done
+2015-07-03T01:15:11.087-0500 I REPL     [ReplicationExecutor] transition to RECOVERING
+2015-07-03T01:15:11.088-0500 I REPL     [ReplicationExecutor] transition to SECONDARY
+2015-07-03T01:15:11.613-0500 I REPL     [ReplicationExecutor] Member localhost:27019 is now in state SECONDARY
+2015-07-03T01:15:11.626-0500 I REPL     [ReplicationExecutor] could not find member to sync from
+2015-07-03T01:15:33.652-0500 I NETWORK  [conn2] end connection 127.0.0.1:59114 (1 connection now open)
+2015-07-03T01:15:33.652-0500 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:59139 #5 (3 connections now open)
+2015-07-03T01:15:35.657-0500 I NETWORK  [conn4] end connection 127.0.0.1:59123 (1 connection now open)
+2015-07-03T01:15:35.658-0500 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:59142 #6 (3 connections now open)
+2015-07-03T01:16:03.705-0500 I NETWORK  [conn5] end connection 127.0.0.1:59139 (1 connection now open)
+2015-07-03T01:16:03.705-0500 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:59156 #7 (3 connections now open)
+2015-07-03T01:16:05.712-0500 I NETWORK  [conn6] end connection 127.0.0.1:59142 (1 connection now open)
+2015-07-03T01:16:05.712-0500 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:59160 #8 (3 connections now open)
+2015-07-03T01:16:33.757-0500 I NETWORK  [conn7] end connection 127.0.0.1:59156 (1 connection now open)
+2015-07-03T01:16:33.758-0500 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:59175 #9 (3 connections now open)
+2015-07-03T01:16:35.761-0500 I NETWORK  [conn8] end connection 127.0.0.1:59160 (1 connection now open)
+2015-07-03T01:16:35.762-0500 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:59179 #10 (3 connections now open)
+2015-07-03T01:17:03.808-0500 I NETWORK  [conn9] end connection 127.0.0.1:59175 (1 connection now open)
+2015-07-03T01:17:03.809-0500 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:59193 #11 (2 connections now open)
+2015-07-03T01:17:05.812-0500 I NETWORK  [conn10] end connection 127.0.0.1:59179 (1 connection now open)
+2015-07-03T01:17:05.813-0500 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:59195 #12 (3 connections now open)
+2015-07-03T01:17:33.868-0500 I NETWORK  [conn11] end connection 127.0.0.1:59193 (1 connection now open)
+2015-07-03T01:17:33.870-0500 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:59211 #13 (2 connections now open)
+2015-07-03T01:17:35.874-0500 I NETWORK  [conn12] end connection 127.0.0.1:59195 (1 connection now open)
+2015-07-03T01:17:35.875-0500 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:59214 #14 (3 connections now open)
+2015-07-03T01:18:03.923-0500 I NETWORK  [conn13] end connection 127.0.0.1:59211 (1 connection now open)
+2015-07-03T01:18:03.923-0500 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:59222 #15 (3 connections now open)
+2015-07-03T01:18:05.925-0500 I NETWORK  [conn14] end connection 127.0.0.1:59214 (1 connection now open)
+2015-07-03T01:18:05.925-0500 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:59224 #16 (3 connections now open)
+2015-07-03T01:18:33.980-0500 I NETWORK  [conn15] end connection 127.0.0.1:59222 (1 connection now open)
+2015-07-03T01:18:33.981-0500 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:59238 #17 (3 connections now open)
+2015-07-03T01:18:35.984-0500 I NETWORK  [conn16] end connection 127.0.0.1:59224 (1 connection now open)
+2015-07-03T01:18:35.985-0500 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:59242 #18 (3 connections now open)
+2015-07-03T01:19:04.032-0500 I NETWORK  [conn17] end connection 127.0.0.1:59238 (1 connection now open)
+2015-07-03T01:19:04.033-0500 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:59271 #19 (3 connections now open)
+2015-07-03T01:19:06.032-0500 I NETWORK  [conn18] end connection 127.0.0.1:59242 (1 connection now open)
+2015-07-03T01:19:06.033-0500 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:59276 #20 (2 connections now open)
+2015-07-03T01:19:26.222-0500 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:59312 #21 (3 connections now open)
+2015-07-03T01:19:26.226-0500 I NETWORK  [conn21] end connection 127.0.0.1:59312 (2 connections now open)
+2015-07-03T01:19:34.090-0500 I NETWORK  [conn19] end connection 127.0.0.1:59271 (1 connection now open)
+2015-07-03T01:19:34.090-0500 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:59318 #22 (3 connections now open)
+2015-07-03T01:19:36.095-0500 I NETWORK  [conn20] end connection 127.0.0.1:59276 (1 connection now open)
+2015-07-03T01:19:36.096-0500 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:59323 #23 (2 connections now open)
+2015-07-03T01:20:04.149-0500 I NETWORK  [conn22] end connection 127.0.0.1:59318 (1 connection now open)
+2015-07-03T01:20:04.149-0500 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:59340 #24 (3 connections now open)
+2015-07-03T01:20:06.153-0500 I NETWORK  [conn23] end connection 127.0.0.1:59323 (1 connection now open)
+2015-07-03T01:20:06.154-0500 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:59344 #25 (2 connections now open)
+2015-07-03T01:20:34.188-0500 I NETWORK  [conn24] end connection 127.0.0.1:59340 (1 connection now open)
+2015-07-03T01:20:34.189-0500 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:59413 #26 (3 connections now open)
+2015-07-03T01:20:36.194-0500 I NETWORK  [conn25] end connection 127.0.0.1:59344 (1 connection now open)
+2015-07-03T01:20:36.194-0500 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:59417 #27 (3 connections now open)
+2015-07-03T01:21:04.238-0500 I NETWORK  [conn26] end connection 127.0.0.1:59413 (1 connection now open)
+2015-07-03T01:21:04.239-0500 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:59426 #28 (2 connections now open)
+2015-07-03T01:21:06.241-0500 I NETWORK  [conn27] end connection 127.0.0.1:59417 (1 connection now open)
+2015-07-03T01:21:06.241-0500 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:59427 #29 (3 connections now open)
+2015-07-03T01:21:34.289-0500 I NETWORK  [conn28] end connection 127.0.0.1:59426 (1 connection now open)
+2015-07-03T01:21:34.289-0500 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:59435 #30 (3 connections now open)
+2015-07-03T01:21:36.294-0500 I NETWORK  [conn29] end connection 127.0.0.1:59427 (1 connection now open)
+2015-07-03T01:21:36.294-0500 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:59436 #31 (3 connections now open)
+2015-07-03T01:22:04.354-0500 I NETWORK  [conn30] end connection 127.0.0.1:59435 (1 connection now open)
+2015-07-03T01:22:04.355-0500 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:59441 #32 (3 connections now open)
+2015-07-03T01:22:06.360-0500 I NETWORK  [conn31] end connection 127.0.0.1:59436 (1 connection now open)
+2015-07-03T01:22:06.361-0500 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:59444 #33 (2 connections now open)
+2015-07-03T01:22:34.404-0500 I NETWORK  [conn32] end connection 127.0.0.1:59441 (1 connection now open)
+2015-07-03T01:22:34.405-0500 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:59448 #34 (3 connections now open)
+2015-07-03T01:22:36.409-0500 I NETWORK  [conn33] end connection 127.0.0.1:59444 (1 connection now open)
+2015-07-03T01:22:36.409-0500 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:59451 #35 (3 connections now open)
+2015-07-03T01:23:04.456-0500 I NETWORK  [conn34] end connection 127.0.0.1:59448 (1 connection now open)
+2015-07-03T01:23:04.456-0500 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:59459 #36 (3 connections now open)
+2015-07-03T01:23:06.459-0500 I NETWORK  [conn35] end connection 127.0.0.1:59451 (1 connection now open)
+2015-07-03T01:23:06.460-0500 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:59461 #37 (2 connections now open)
+2015-07-03T01:23:30.458-0500 I NETWORK  [conn36] end connection 127.0.0.1:59459 (1 connection now open)
+2015-07-03T01:23:30.498-0500 I NETWORK  [ReplExecNetThread-1] DBClientCursor::init call() failed
+2015-07-03T01:23:30.501-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27017; Location10276 DBClientBase::findN: transport error: localhost:27017 ns: admin.$cmd query: { replSetHeartbeat: "m101", pv: 1, v: 1, from: "localhost:27018", fromId: 1, checkEmpty: false }
+2015-07-03T01:23:30.502-0500 I REPL     [ReplicationExecutor] Standing for election
+2015-07-03T01:23:30.502-0500 W NETWORK  [ReplExecNetThread-1] Failed to connect to 127.0.0.1:27017, reason: errno:61 Connection refused
+2015-07-03T01:23:30.503-0500 I REPL     [ReplicationExecutor] replSet possible election tie; sleeping 907ms until 2015-07-03T01:23:31.409-0500
+2015-07-03T01:23:30.504-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27017; Location18915 Failed attempt to connect to localhost:27017; couldn't connect to server localhost:27017 (127.0.0.1), connection attempt failed
+2015-07-03T01:23:30.504-0500 W NETWORK  [ReplExecNetThread-0] Failed to connect to 127.0.0.1:27017, reason: errno:61 Connection refused
+2015-07-03T01:23:30.505-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27017; Location18915 Failed attempt to connect to localhost:27017; couldn't connect to server localhost:27017 (127.0.0.1), connection attempt failed
+2015-07-03T01:23:31.388-0500 I REPL     [ReplicationExecutor] replSetElect voting yea for localhost:27019 (2)
+2015-07-03T01:23:32.503-0500 I REPL     [ReplicationExecutor] Member localhost:27019 is now in state PRIMARY
+2015-07-03T01:23:32.506-0500 W NETWORK  [ReplExecNetThread-0] Failed to connect to 127.0.0.1:27017, reason: errno:61 Connection refused
+2015-07-03T01:23:32.506-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27017; Location18915 Failed attempt to connect to localhost:27017; couldn't connect to server localhost:27017 (127.0.0.1), connection attempt failed
+2015-07-03T01:23:32.507-0500 W NETWORK  [ReplExecNetThread-1] Failed to connect to 127.0.0.1:27017, reason: errno:61 Connection refused
+2015-07-03T01:23:32.508-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27017; Location18915 Failed attempt to connect to localhost:27017; couldn't connect to server localhost:27017 (127.0.0.1), connection attempt failed
+2015-07-03T01:23:32.508-0500 W NETWORK  [ReplExecNetThread-0] Failed to connect to 127.0.0.1:27017, reason: errno:61 Connection refused
+2015-07-03T01:23:32.508-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27017; Location18915 Failed attempt to connect to localhost:27017; couldn't connect to server localhost:27017 (127.0.0.1), connection attempt failed
