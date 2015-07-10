@@ -7,13 +7,14 @@
 To build a blog with [MongoDB](https://www.mongodb.org/) and [Bottle](http://bottlepy.org/docs/dev/index.html) framework in Python(PyMongo)
 
 ---
-Final
+Final, Completed 7/9/15 Finally done with this! 
+
+Import a JSON file to MongoDB:
 
 ```
 mongorestore --collection messages --db enron messages.bson
 ```
-
-
+See `Final/Final_answers.md` for answers to the final exam. 
 
 
 ---
@@ -90,6 +91,7 @@ $sum,$avg,$min,$max,$push,$addtoset,$first,$last
 	Schema Design - Patterns, case studies and tradeoffs. **$Pull**(remove) and **$Push**(insert)
 
 Import Json file into MongoDB
+
 
 ```mongoimport -d school -c students < HW3.1students.json```
 
