@@ -1,5 +1,7 @@
 ## M101P: MongoDB For Developers (Python) 05/2015
 
+[Notes on Cassandra, Hadoop & MapReduce from Cloud Computing](https://gist.github.com/yanniey/747586e01099bfca3e9abc5125dfc0bd)
+
 #### [Course Link](https://university.mongodb.com/courses/M101P/about)
 
 #### Goal:
@@ -7,7 +9,6 @@
 To build a blog with [MongoDB](https://www.mongodb.org/) and [Bottle](http://bottlepy.org/docs/dev/index.html) framework in Python(PyMongo)
 
 ---
-Final, Completed 7/9/15 Finally done with this course! Whew it's been a while. Glad to get it over with and move on to building real MongoDBs to store data from my Scrapy projects. 
 
 ![I'm done!](http://static.fjcdn.com/gifs/That+s+it+i+m+out+a+grown+ass+man+just+said_9e746c_4723734.gif)
 
