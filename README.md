@@ -10,7 +10,6 @@ To build a blog with [MongoDB](https://www.mongodb.org/) and [Bottle](http://bot
 
 ---
 
-![I'm done!](http://static.fjcdn.com/gifs/That+s+it+i+m+out+a+grown+ass+man+just+said_9e746c_4723734.gif)
 
 Import a JSON file to MongoDB:
 
